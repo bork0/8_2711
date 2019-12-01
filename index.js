@@ -102,3 +102,22 @@ task #7
 
 `);
 
+let reg7 = /^[a-z]+[a-z0-9]{2,10}$/i;
+let reg8 = /\d+/g;
+
+function checkLogin(string) {
+    console.log(reg7.test(string));
+    let numbInString = string.match(reg8);
+    for (let el = 0; el<numbInString.length; el++){
+        console.log(numbInString[el]);
+    }
+};
+
+console.log(`checkLogin function result for 'ee11ret3' is: `);
+checkLogin('ee11ret3');
+console.log(`checkLogin function result for 'ee1*1ret3' is: `);
+checkLogin('ee1*1ret3');
+
+
+
+
