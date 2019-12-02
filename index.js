@@ -102,7 +102,7 @@ task #7
 
 `);
 
-let reg7 = /^[a-z]+[a-z0-9]{2,10}$/i;
+let reg7 = /^[a-z]+[a-z0-9\.]{2,10}$/i;
 let reg8 = /\d+/g;
 
 function checkLogin(string) {
